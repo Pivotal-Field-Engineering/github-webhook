@@ -87,19 +87,18 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<!-- [PIPELINE] -->
-	<distributionManagement>
-		<repository>
-			<id>${distribution.management.release.id}</id>
-			<name>Spring Milestone Repository</name>
-			<url>${distribution.management.release.url}</url>
-		</repository>
-		<snapshotRepository>
-			<id>${distribution.management.release.id}</id>
-			<name>Spring Snapshot Repository</name>
-			<url>${distribution.management.snapshot.url}</url>
-		</snapshotRepository>
-	</distributionManagement>
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>e62972d3fa35-releases</name>
+        <url>http://localhost:8081/artifactory/libs-release-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>e62972d3fa35-snapshots</name>
+        <url>http://localhost:8081/artifactory/libs-release-local</url>
+    </snapshotRepository>
+</distributionManagement>
 
 	<profiles>
 		<profile>
